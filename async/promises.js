@@ -56,9 +56,19 @@ function createPost(post) {
 
 // Async await
 
-async function init() {
-    await createPost({ title: '333', body: 'This is demo' });
-    getPosts();
+// async function init() {
+//     await createPost({ title: '333', body: 'This is demo' });
+//     getPosts();
+// }
+
+// init();
+
+// async await fetch users 
+
+async function fetchUsers() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json();
+    console.log(data);
 }
 
-init();
+fetchUsers();
