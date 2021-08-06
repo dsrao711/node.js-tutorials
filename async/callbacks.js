@@ -1,5 +1,5 @@
 const posts = [{
-        title: 'Post one',
+        title: 'Post 1',
         body: 'This is post one'
     },
     {
@@ -19,12 +19,14 @@ function getPosts() {
 
 }
 
-function createPost() {
-    setTimeout((post, callback) => {
+
+
+function createPost(post, callback) {
+    setTimeout(() => {
         posts.push(post);
         callback();
+
     }, 2000)
 }
-
 
 createPost({ title: 'Post3', body: 'This is Post 3' }, getPosts);
