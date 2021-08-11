@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile('./views/about.html', { root: __dirname })
+    res.render('about')
 });
 
 // Redirects
@@ -27,5 +27,5 @@ app.get('/about-us', (req, res) => {
 // 404 pages
 
 app.use((req, res) => {
-    res.status(400).sendFile('./views/404.html', { root: __dirname })
+    res.status(400).render('404')
 });
