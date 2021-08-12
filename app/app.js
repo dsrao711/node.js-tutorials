@@ -20,7 +20,7 @@ app.get('/about', (req, res) => {
         { charachter: 'Amy Santiago', name: 'Mellisa Fumero' },
         { charachter: 'Jake Peralta', name: 'Andy Samberg' }
     ]
-    res.render('about', blogs)
+    res.render('about', { blogs })
 });
 
 // Redirects
