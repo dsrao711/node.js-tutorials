@@ -11,11 +11,16 @@ app.set('view engine', 'ejs')
 
 
 app.get('/', (req, res) => {
-    res.render('index')
+
+    res.render('index', { title: "Brooklyn 999" })
 });
 
 app.get('/about', (req, res) => {
-    res.render('about')
+    const blogs = [
+        { charachter: 'Amy Santiago', name: 'Mellisa Fumero' },
+        { charachter: 'Jake Peralta', name: 'Andy Samberg' }
+    ]
+    res.render('about', blogs)
 });
 
 // Redirects
