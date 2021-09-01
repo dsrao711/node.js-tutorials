@@ -1,2 +1,6 @@
-# node.js
-My daily learnings and tutorial series 
+# node.js tutorials
+Includes practice files for
+
+- Async Await Promises
+- DOM 
+- Basic Blog app 
